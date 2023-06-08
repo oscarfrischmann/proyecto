@@ -143,6 +143,7 @@ figure {
 .footer__titulos {
   grid-column: 1/2;
   background-color: rgba(232, 231, 221, 0.4666666667);
+  margin-top: 4rem;
 }
 .footer__titulos h1 {
   text-align: center;
@@ -150,11 +151,13 @@ figure {
   font-weight: normal;
 }
 .footer__titulos h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
   text-align: center;
   font-weight: normal;
   font-size: 1.5rem;
   letter-spacing: 2px;
   padding-bottom: 5px;
+  margin: 0 0 4rem 0;
 }
 .footer__divisor {
   width: 85vw;
