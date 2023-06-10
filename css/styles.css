@@ -55,8 +55,9 @@ figure {
 
 .header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: initial;
+  flex-direction: row;
   position: sticky;
   top: 0px;
   background-color: white;
@@ -94,8 +95,8 @@ figure {
 @media (min-width: 992px) {
   .header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
   }
   .header__burger {
     display: none;
@@ -105,11 +106,13 @@ figure {
   }
   .header__navs {
     display: flex;
+    justify-content: initial;
     align-items: center;
     gap: 30px;
   }
   .header__navs-pages {
     display: flex;
+    justify-content: initial;
     align-items: center;
     gap: 2px;
   }
@@ -126,8 +129,9 @@ figure {
   }
   .header__navs-lang ul {
     display: flex;
-    flex-direction: column;
+    justify-content: initial;
     align-items: center;
+    flex-direction: column;
     margin-right: 30px;
   }
 }
@@ -172,6 +176,7 @@ figure {
 .footer__media-icons ul {
   display: flex;
   justify-content: center;
+  align-items: initial;
   margin: 4vh;
   gap: 3vw;
 }
@@ -236,6 +241,7 @@ figure {
   .footer__navs {
     display: flex;
     justify-content: center;
+    align-items: initial;
     background-color: rgba(232, 231, 221, 0.5843137255);
     height: 270px;
     font-size: 1.5rem;
@@ -263,17 +269,17 @@ figure {
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     line-height: 2.5rem;
   }
   .footer__ubicacion {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
     position: unset;
     height: 270px;
-    align-items: center;
     gap: 10px;
     background-color: white;
     padding-bottom: 0;
@@ -398,6 +404,7 @@ figure {
 .habitaciones__card--servic {
   display: flex;
   justify-content: center;
+  align-items: initial;
 }
 .habitaciones__card--tittle {
   padding: 0.5rem;
@@ -478,9 +485,10 @@ figure {
   }
   .habitaciones__article--encabezado {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 90vw;
     margin: 0 auto;
-    justify-content: space-between;
   }
   .habitaciones__contenedor-card {
     display: grid;
@@ -536,6 +544,7 @@ figure {
   .excursiones {
     display: flex;
     justify-content: center;
+    align-items: initial;
     gap: 32px;
     width: 75vw;
     margin: 0 auto;
@@ -594,14 +603,10 @@ figure {
 
 @media (min-width: 992px) {
   .reservas__section {
-    flex-direction: row;
+    display: flex;
     justify-content: space-around;
     align-items: flex-start;
-  }
-  .reservas__titulo {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
+    flex-direction: row;
   }
   .reservas__img {
     background-image: url(../img/26.jpg);
