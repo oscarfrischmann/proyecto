@@ -106,11 +106,8 @@ figure {
     display: flex;
     justify-content: space-between;
     align-items: center;
-<<<<<<< HEAD
-=======
-    flex-direction: initial;
->>>>>>> main
-  }
+    flex-direction: initial;}
+  
   .header__burger {
     display: none;
   }
@@ -119,22 +116,21 @@ figure {
   }
   .header__navs {
     display: flex;
-<<<<<<< HEAD
     justify-content: initial;
-=======
+
     justify-content: inherit;
->>>>>>> main
+
     align-items: center;
     flex-direction: inherit;
     gap: 30px;
   }
   .header__navs-pages {
     display: flex;
-<<<<<<< HEAD
+
     justify-content: initial;
-=======
+
     justify-content: inherit;
->>>>>>> main
+
     align-items: center;
     flex-direction: inherit;
     gap: 2px;
@@ -152,11 +148,10 @@ figure {
   }
   .header__navs-lang ul {
     display: flex;
-<<<<<<< HEAD
     justify-content: initial;
-=======
+
     justify-content: inherit;
->>>>>>> main
+
     align-items: center;
     flex-direction: column;
     margin-right: 30px;
@@ -197,11 +192,11 @@ figure {
   font-size: 2rem;
   letter-spacing: 2px;
   padding-bottom: 5px;
-<<<<<<< HEAD
+
   margin: 0 0 4rem 0;
-=======
+
   margin: 0;
->>>>>>> main
+
 }
 .footer__divisor {
   width: 85vw;
@@ -217,11 +212,11 @@ figure {
   display: flex;
   justify-content: center;
   align-items: initial;
-<<<<<<< HEAD
+
   margin: 4vh;
-=======
+
   flex-direction: inherit;
->>>>>>> main
+
   gap: 3vw;
   margin: 4vh;
 }
@@ -302,10 +297,9 @@ figure {
     display: flex;
     justify-content: center;
     align-items: initial;
-<<<<<<< HEAD
-=======
+
     flex-direction: inherit;
->>>>>>> main
+
     background-color: rgba(232, 231, 221, 0.5843137255);
     height: 270px;
     font-size: 1.5rem;
@@ -331,12 +325,12 @@ figure {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-<<<<<<< HEAD
-=======
+
+
     background-color: rgba(232, 231, 221, 0.5843137255);
     height: 270px;
     font-size: 1.4rem;
->>>>>>> main
+
     line-height: 2.5rem;
   }
   .footer__ubicacion {
@@ -347,10 +341,10 @@ figure {
     gap: 10px;
     position: unset;
     height: 270px;
-<<<<<<< HEAD
+
     gap: 10px;
-=======
->>>>>>> main
+
+
     background-color: white;
     padding-bottom: 0;
     grid-column: 4/5;
@@ -471,10 +465,10 @@ figure {
   display: flex;
   justify-content: center;
   align-items: initial;
-<<<<<<< HEAD
-=======
+
+
   flex-direction: initial;
->>>>>>> main
+
 }
 .habitaciones__card--tittle {
   padding: 0.5rem;
@@ -507,15 +501,14 @@ figure {
   height: 30vh;
 }
 
-<<<<<<< HEAD
+
 .titulo__secundario--excur {
   margin-top: 0 !important;
 }
 
-@media (min-width: 992px) {
-=======
+
 @media (min-width: 768px) {
->>>>>>> main
+
   .hosteria__section {
     margin-top: 4rem;
     padding-bottom: 4rem;
@@ -561,10 +554,10 @@ figure {
     display: flex;
     justify-content: space-around;
     align-items: center;
-<<<<<<< HEAD
-=======
+
+
     flex-direction: inherit;
->>>>>>> main
+
     width: 90vw;
     margin: 0 auto;
   }
@@ -625,10 +618,10 @@ figure {
     display: flex;
     justify-content: center;
     align-items: initial;
-<<<<<<< HEAD
-=======
+
+
     flex-direction: inherit;
->>>>>>> main
+
     gap: 32px;
     width: 75vw;
     margin: 0 auto;
@@ -695,15 +688,15 @@ figure {
     justify-content: space-around;
     align-items: flex-start;
     flex-direction: row;
-<<<<<<< HEAD
-=======
+
+
   }
   .reservas__titulo {
     display: flex;
     justify-content: start;
     align-items: initial;
     flex-direction: column;
->>>>>>> main
+
   }
   .reservas__img {
     background-image: url(../img/26.jpg);
