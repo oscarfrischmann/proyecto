@@ -8,8 +8,8 @@
   }
 }
 * {
-  margin: 10px;
-  padding: 10px;
+  margin: 0px;
+  padding: 0px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: rgba(0, 0, 0, 0.5843137255);
   box-sizing: border-box;
@@ -106,8 +106,8 @@ figure {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: initial;}
-  
+    flex-direction: initial;
+  }
   .header__burger {
     display: none;
   }
@@ -116,21 +116,14 @@ figure {
   }
   .header__navs {
     display: flex;
-    justify-content: initial;
-
     justify-content: inherit;
-
     align-items: center;
     flex-direction: inherit;
     gap: 30px;
   }
   .header__navs-pages {
     display: flex;
-
-    justify-content: initial;
-
     justify-content: inherit;
-
     align-items: center;
     flex-direction: inherit;
     gap: 2px;
@@ -148,10 +141,7 @@ figure {
   }
   .header__navs-lang ul {
     display: flex;
-    justify-content: initial;
-
     justify-content: inherit;
-
     align-items: center;
     flex-direction: column;
     margin-right: 30px;
@@ -175,7 +165,6 @@ figure {
 .footer__titulos {
   grid-column: 1/2;
   background-color: rgba(232, 231, 221, 0.4666666667);
-  padding-top: 4rem;
 }
 .footer__titulos h1 {
   font-family: dearJoe;
@@ -186,17 +175,12 @@ figure {
   margin: 2rem 0 0 0;
 }
 .footer__titulos h2 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
   text-align: center;
   font-weight: normal;
   font-size: 2rem;
   letter-spacing: 2px;
   padding-bottom: 5px;
-
-  margin: 0 0 4rem 0;
-
   margin: 0;
-
 }
 .footer__divisor {
   width: 85vw;
@@ -212,11 +196,7 @@ figure {
   display: flex;
   justify-content: center;
   align-items: initial;
-
-  margin: 4vh;
-
   flex-direction: inherit;
-
   gap: 3vw;
   margin: 4vh;
 }
@@ -297,9 +277,7 @@ figure {
     display: flex;
     justify-content: center;
     align-items: initial;
-
     flex-direction: inherit;
-
     background-color: rgba(232, 231, 221, 0.5843137255);
     height: 270px;
     font-size: 1.5rem;
@@ -325,12 +303,9 @@ figure {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-
     background-color: rgba(232, 231, 221, 0.5843137255);
     height: 270px;
     font-size: 1.4rem;
-
     line-height: 2.5rem;
   }
   .footer__ubicacion {
@@ -341,10 +316,6 @@ figure {
     gap: 10px;
     position: unset;
     height: 270px;
-
-    gap: 10px;
-
-
     background-color: white;
     padding-bottom: 0;
     grid-column: 4/5;
@@ -404,7 +375,6 @@ figure {
   padding-bottom: 0px;
   margin-bottom: 48px;
   margin-top: 48px;
-  margin-bottom: 0;
 }
 .nosotros__subtitulo {
   font-weight: 300;
@@ -465,10 +435,7 @@ figure {
   display: flex;
   justify-content: center;
   align-items: initial;
-
-
   flex-direction: initial;
-
 }
 .habitaciones__card--tittle {
   padding: 0.5rem;
@@ -501,14 +468,7 @@ figure {
   height: 30vh;
 }
 
-
-.titulo__secundario--excur {
-  margin-top: 0 !important;
-}
-
-
 @media (min-width: 768px) {
-
   .hosteria__section {
     margin-top: 4rem;
     padding-bottom: 4rem;
@@ -554,10 +514,7 @@ figure {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
-
     flex-direction: inherit;
-
     width: 90vw;
     margin: 0 auto;
   }
@@ -618,10 +575,7 @@ figure {
     display: flex;
     justify-content: center;
     align-items: initial;
-
-
     flex-direction: inherit;
-
     gap: 32px;
     width: 75vw;
     margin: 0 auto;
@@ -688,15 +642,12 @@ figure {
     justify-content: space-around;
     align-items: flex-start;
     flex-direction: row;
-
-
   }
   .reservas__titulo {
     display: flex;
     justify-content: start;
     align-items: initial;
     flex-direction: column;
-
   }
   .reservas__img {
     background-image: url(../img/26.jpg);
