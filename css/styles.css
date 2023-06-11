@@ -1,3 +1,12 @@
+@font-face {
+  font-family: dearJoe;
+  src: url(./fonts/dearJoe1.ttf);
+}
+@keyframes rot55 {
+  to {
+    transform: rotate(360deg);
+  }
+}
 * {
   margin: 10px;
   padding: 10px;
@@ -92,11 +101,15 @@ figure {
   background-color: rgba(232, 231, 221, 0.4666666667);
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+<<<<<<< HEAD
+=======
+    flex-direction: initial;
+>>>>>>> main
   }
   .header__burger {
     display: none;
@@ -106,14 +119,24 @@ figure {
   }
   .header__navs {
     display: flex;
+<<<<<<< HEAD
     justify-content: initial;
+=======
+    justify-content: inherit;
+>>>>>>> main
     align-items: center;
+    flex-direction: inherit;
     gap: 30px;
   }
   .header__navs-pages {
     display: flex;
+<<<<<<< HEAD
     justify-content: initial;
+=======
+    justify-content: inherit;
+>>>>>>> main
     align-items: center;
+    flex-direction: inherit;
     gap: 2px;
   }
   .header__navs-pages li {
@@ -121,7 +144,7 @@ figure {
     background-size: 0px;
     border-radius: 5px;
     transition: font-size 3s, background 1s;
-    padding: 25px;
+    padding: 8px;
   }
   .header__navs-pages li:hover {
     background-color: rgba(134, 124, 167, 0.314);
@@ -129,20 +152,30 @@ figure {
   }
   .header__navs-lang ul {
     display: flex;
+<<<<<<< HEAD
     justify-content: initial;
+=======
+    justify-content: inherit;
+>>>>>>> main
     align-items: center;
     flex-direction: column;
     margin-right: 30px;
   }
 }
+@media (min-width: 992px) {
+  .header__navs-pages li {
+    font-size: 1.5rem;
+    padding: 15px;
+  }
+}
 @media (min-width: 1296px) {
   .header__navs-pages li {
     font-size: 2rem;
+    padding: 23px;
   }
 }
 .footer {
   display: grid;
-  grid-template-columns: 100vw;
 }
 .footer__titulos {
   grid-column: 1/2;
@@ -150,22 +183,29 @@ figure {
   padding-top: 4rem;
 }
 .footer__titulos h1 {
+  font-family: dearJoe;
   text-align: center;
   font-size: 4rem;
   font-weight: normal;
+  font-style: italic;
+  margin: 2rem 0 0 0;
 }
 .footer__titulos h2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
   text-align: center;
   font-weight: normal;
-  font-size: 1.5rem;
+  font-size: 2rem;
   letter-spacing: 2px;
   padding-bottom: 5px;
+<<<<<<< HEAD
   margin: 0 0 4rem 0;
+=======
+  margin: 0;
+>>>>>>> main
 }
 .footer__divisor {
   width: 85vw;
-  margin: 20px auto 20px auto;
+  margin: 20px auto;
 }
 .footer__navs {
   display: none;
@@ -177,8 +217,13 @@ figure {
   display: flex;
   justify-content: center;
   align-items: initial;
+<<<<<<< HEAD
   margin: 4vh;
+=======
+  flex-direction: inherit;
+>>>>>>> main
   gap: 3vw;
+  margin: 4vh;
 }
 .footer__media-icons img {
   width: 50px;
@@ -187,34 +232,49 @@ figure {
   display: none;
 }
 .footer__ubicacion {
-  position: relative;
   padding-bottom: 5vh;
   grid-row: 2/3;
   background-color: rgba(232, 231, 221, 0.4666666667);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: initial;
 }
 .footer__ubicacion--none {
   display: none;
 }
-.footer__map--index {
+.footer__img {
   position: relative;
   border-radius: 50%;
-  margin: 2vh auto;
   width: 200px;
   height: 200px;
-  background: linear-gradient(140deg, rgb(255, 255, 255), transparent, transparent, rgb(46, 46, 46)), url(../img/mapa_footer--cuadrado.png);
-  box-shadow: inset 0px -30px 50px rgb(66, 65, 65), 10px 10px 10px grey;
+  animation: rot55 35s linear infinite;
 }
-.footer__map--index:active {
-  box-shadow: inset 0px -20px 35px rgb(66, 65, 65);
-  transition: 0.1s;
+.footer__map--index {
+  filter: drop-shadow(10px 10px 10px grey);
+  border-radius: 50%;
+  justify-self: center;
+  align-self: center;
+}
+.footer__map--index2 {
+  width: 202px;
+  height: 202px;
+  box-shadow: inset -10px -15px 30px 10px rgb(100, 100, 100);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 .footer__adress--index {
   text-align: center;
   position: absolute;
   left: 40vw;
-  bottom: 22px;
   font-size: 1.3rem;
   font-weight: 500;
+  align-self: end;
+  padding-left: 15px;
 }
 .footer__copyright--mobil {
   text-align: center;
@@ -229,7 +289,7 @@ figure {
 @media (min-width: 992px) {
   .footer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr) 2fr;
+    grid-template-columns: repeat(2, 1fr) mminmax(270, 1fr) 2fr;
     align-items: center;
   }
   .footer__copyright--mobil {
@@ -242,6 +302,10 @@ figure {
     display: flex;
     justify-content: center;
     align-items: initial;
+<<<<<<< HEAD
+=======
+    flex-direction: inherit;
+>>>>>>> main
     background-color: rgba(232, 231, 221, 0.5843137255);
     height: 270px;
     font-size: 1.5rem;
@@ -263,14 +327,16 @@ figure {
     justify-self: end;
   }
   .footer__contact {
-    display: block;
-    background-color: rgba(232, 231, 221, 0.5843137255);
-    height: 270px;
-    font-size: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+<<<<<<< HEAD
+=======
+    background-color: rgba(232, 231, 221, 0.5843137255);
+    height: 270px;
+    font-size: 1.4rem;
+>>>>>>> main
     line-height: 2.5rem;
   }
   .footer__ubicacion {
@@ -278,9 +344,13 @@ figure {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    gap: 10px;
     position: unset;
     height: 270px;
+<<<<<<< HEAD
     gap: 10px;
+=======
+>>>>>>> main
     background-color: white;
     padding-bottom: 0;
     grid-column: 4/5;
@@ -288,11 +358,7 @@ figure {
   }
   .footer__adress--index {
     position: unset;
-    margin: 0;
-  }
-  .footer__map--index {
-    position: unset;
-    margin: 0;
+    align-self: center;
   }
 }
 .index__img-principal--desktop {
@@ -308,7 +374,7 @@ figure {
   overflow: hidden;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .index__img-principal--mobile {
     display: none;
   }
@@ -405,6 +471,10 @@ figure {
   display: flex;
   justify-content: center;
   align-items: initial;
+<<<<<<< HEAD
+=======
+  flex-direction: initial;
+>>>>>>> main
 }
 .habitaciones__card--tittle {
   padding: 0.5rem;
@@ -437,11 +507,15 @@ figure {
   height: 30vh;
 }
 
+<<<<<<< HEAD
 .titulo__secundario--excur {
   margin-top: 0 !important;
 }
 
 @media (min-width: 992px) {
+=======
+@media (min-width: 768px) {
+>>>>>>> main
   .hosteria__section {
     margin-top: 4rem;
     padding-bottom: 4rem;
@@ -487,6 +561,10 @@ figure {
     display: flex;
     justify-content: space-around;
     align-items: center;
+<<<<<<< HEAD
+=======
+    flex-direction: inherit;
+>>>>>>> main
     width: 90vw;
     margin: 0 auto;
   }
@@ -509,6 +587,8 @@ figure {
   }
   .espacios__encabezado {
     display: flex;
+    justify-content: inherit;
+    align-items: inherit;
     flex-direction: column;
   }
   .espacios__galeria {
@@ -545,6 +625,10 @@ figure {
     display: flex;
     justify-content: center;
     align-items: initial;
+<<<<<<< HEAD
+=======
+    flex-direction: inherit;
+>>>>>>> main
     gap: 32px;
     width: 75vw;
     margin: 0 auto;
@@ -561,6 +645,8 @@ figure {
 }
 .reservas__section {
   display: flex;
+  justify-content: inherit;
+  align-items: initial;
   flex-direction: column;
 }
 .reservas h2 {
@@ -574,6 +660,8 @@ figure {
 }
 .reservas__form--mobile {
   display: flex;
+  justify-content: inherit;
+  align-items: initial;
   flex-direction: column;
   gap: 16px;
 }
@@ -607,6 +695,15 @@ figure {
     justify-content: space-around;
     align-items: flex-start;
     flex-direction: row;
+<<<<<<< HEAD
+=======
+  }
+  .reservas__titulo {
+    display: flex;
+    justify-content: start;
+    align-items: initial;
+    flex-direction: column;
+>>>>>>> main
   }
   .reservas__img {
     background-image: url(../img/26.jpg);
@@ -647,7 +744,7 @@ h2 {
   margin-top: 48px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .ubicacion {
     grid-template-rows: 1fr 3fr 1fr;
     width: 50vw;

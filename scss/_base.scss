@@ -1,11 +1,24 @@
 $footer-color: #E8E7DD77;
 $margen-main: 4rem;
-$breakpoint1: 992px;
-$breakpoint: 768px;
+@font-face {
+    font-family: dearJoe;
+    src: url(./fonts/dearJoe1.ttf);
+}
 
-@mixin flex-center {
+// $breakpoint1: 992px;
+// $breakpoint: 768px;
+
+$break: (
+    tablet: 768px,
+    inter: 992px,
+    desktop: 1296px,
+);
+
+@mixin flex($justify, $align, $direction) {
     display: flex;
-    justify-content: center;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
 }
 
 @mixin titulo__secundario {
@@ -17,6 +30,12 @@ $breakpoint: 768px;
     margin-bottom: 48px;
     margin-top: 48px;
 }
+
+@keyframes rot55 {
+    to {
+      transform: rotate(360deg);
+    }
+  }
 
 * {
     margin: 10px;
