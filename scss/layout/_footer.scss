@@ -1,0 +1,197 @@
+.footer {
+    display: grid;
+
+    &__titulos {
+        grid-column: 1/2;
+        background-color: $footer-color;
+
+        h1 {
+            font-family: dearJoe;
+            text-align: center;
+            font-size: 4rem;
+            font-weight: normal;
+            font-style: italic;
+            margin: 2rem 0 0 0;
+        }
+
+        h2 {
+            text-align: center;
+            font-weight: normal;
+            font-size: 2rem;
+            letter-spacing: 2px;
+            padding-bottom: 5px;
+            margin: 0;
+        }
+    }
+
+    &__divisor {
+        width: 85vw;
+        margin: 20px auto;
+    }
+
+    &__navs {
+        display: none;
+    }
+
+    h3 {
+        display: none;
+    }
+
+    &__media-icons {
+        ul {
+            @include flex(center, initial, inherit);
+            gap: 3vw;
+            margin: 4vh;
+        }
+
+        img {
+            width: 50px;
+        }
+    }
+
+    &__contact {
+        display: none;
+    }
+
+    &__ubicacion {
+        padding-bottom: 5vh;
+        grid-row: 2/3;
+        background-color: $footer-color;
+        @include flex(center, center, initial);
+
+        &--none {
+            display: none;
+        }
+    }
+
+    &__img {
+        position: relative;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        animation: rot55 35s linear infinite;
+    }
+
+
+    &__map {
+        &--index {
+            filter: drop-shadow(10px 10px 10px grey);
+            border-radius: 50%;
+            justify-self: center;
+            align-self: center;
+        }
+
+        &--index2 {
+            width: 202px;
+            height: 202px;
+            box-shadow: inset -10px -15px 30px 10px rgb(100, 100, 100);
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+    }
+
+    &__adress--index {
+        text-align: center;
+        position: absolute;
+        left: 40vw;
+        font-size: 1.3rem;
+        font-weight: 500;
+        align-self: end;
+        padding-left: 15px;
+    }
+
+    &__copyright {
+        &--mobil {
+            text-align: center;
+            font-size: 0.7rem;
+            background-color: $footer-color;
+            padding: 10px;
+        }
+
+        &--desktop {
+            display: none;
+        }
+    }
+}
+
+@media (min-width:map-get($break, "inter")) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) mminmax(270, 1fr) 2fr;
+        align-items: center;
+
+        &__copyright {
+
+            &--mobil {
+                display: none;
+            }
+        }
+
+        &__titulos {
+            @include clipped;
+        }
+
+        &__navs {
+            @include flex(center, initial, inherit);
+            background-color: #E8E7DD95;
+            // width: 25vw;
+            height: 270px;
+            font-size: 1.5rem;
+
+            & ul {
+                place-self: center;
+            }
+        }
+
+        &__media-icons {
+
+            & img {
+                width: 45px;
+                vertical-align: middle;
+            }
+
+            & ul {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                gap: 5px;
+            }
+
+            &--item {
+                justify-self: end;
+            }
+        }
+
+        &__contact {
+            @include flex(center, center, column);
+            // display: block;
+            background-color: #E8E7DD95;
+            height: 270px;
+            font-size: 1.4rem;
+            line-height: 2.5rem;
+        }
+
+        &__ubicacion {
+            @include flex(center, center, row);
+            gap: 10px;
+            position: unset;
+            height: 270px;
+            background-color: white;
+            padding-bottom: 0;
+            grid-column: 4/5;
+            grid-row: 1/2;
+        }
+
+        &__adress {
+            &--index {
+                position: unset;
+                align-self: center;
+            }
+        }
+    }
+}
