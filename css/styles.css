@@ -854,7 +854,7 @@ h2 {
 .galeria img {
   width: 25%;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: 1.5s;
 }
 .galeria img:hover {
